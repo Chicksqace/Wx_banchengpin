@@ -1,0 +1,39 @@
+<view class="content">
+  <view class="search">
+    <view class="searchInput">
+      <image src="/pages/images/tubiao/search.png" style="width:15px;height:15px;"></image>
+      <text class="searchContent">老用户福利</text>
+    </view>
+  </view>
+  <view class="category">
+    <view class="left">
+      <block wx:for="{{category}}">
+        <view class="{{flag==index?'select':'normal'}}" id="{{index}}" bindtap="switchNav">{{item.firstTypeName}}</view>
+      </block>
+    </view>
+    <view class="space"></view>
+    <view class="right">
+      <view class="rightContent">
+        <swiper current="{{currentTab}}" style="height:500px;">
+          <block wx:for="{{category}}">
+            <swiper-item>
+              <view class="items">
+                <block wx:for="{{item.children}}" wx:for-item="it">
+                  <view class="item" data-firstid="{{item.firstId}}" data-secondid="{{it.secondId}}">
+                    <view wx:if="{{it.secondTypeIcon}}">
+                      <image src="{{it.secondTypeIcon}}"></image>
+                    </view>
+                    <view wx:else>
+                      <image src="/pages/images/category/default.jpg"></image>
+                    </view>
+                    <view class="name">{{it.secondTypeName}}</view>
+                  </view>
+                </block>
+              </view>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </view>
+  </view>
+</view>

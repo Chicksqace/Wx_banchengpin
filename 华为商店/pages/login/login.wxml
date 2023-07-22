@@ -1,0 +1,50 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="content">
+   <view class="loginTitle">
+     <view class="{{currentTab==0?'select':'default'}}" data-current="0" bindtap="switchNav">账号密码登录</view>
+     <view class="{{currentTab==1?'select':'default'}}" data-current="1" bindtap="switchNav">手机快捷登录</view>
+   </view>
+   <view class="hr"></view>
+   <swiper current="{{currentTab}}"style="height:{{winHeight}}px">
+      <swiper-item>
+         <view class="accountType">
+            <view class="account">
+                <view class="ac">账号</view>
+                <view class="ipt"><input name="loginName" focus="false" placeholder="请输入用户名" class="placeholder-style" value='{{form_info}}'/></view>
+            </view>
+             <view class="hr"></view>
+             <view class="account">
+                <view class="ac">密码</view>
+                <view class="ipt"><input  name="loginPassword" type="text" password="true" placeholder="请输入密码" class="placeholder-style" value='{{form_info}}'/></view>
+            </view>
+            <view class="hr"></view>   
+            <view class="login">
+              <button form-type="submit">登 录</button>
+              <view class="fp" bindtap='toRegister'>没有账号？注册</view>
+            </view>   
+         </view>
+      </swiper-item>
+      <swiper-item>
+         <view class="mobileType">
+            <view class="account">
+                <view class="ac">手机号</view>
+                <view class="ipt"><input name="mobile" type="text" placeholder="仅支持中国大陆手机号" class="placeholder-style" value='{{form_info}}' bindinput='getMobile'/>
+                 <button class="btn" bindtap="getcode" wx:if="{{flag==true}}">{{yzmvalue}}</button>
+                 <button class="btn" wx:else>{{timevalue}}s</button>
+                </view>
+            </view>
+             <view class="hr"></view>
+             <view class="account">
+                <view class="ac">验证码</view>
+                <view class="ipt"><input name="verifyCode" type="text" placeholder="请输入验证码" class="placeholder-style" value='{{verifyCode}}'/></view>
+            </view>
+            <view class="hr"></view>   
+            <view class="login">
+              <button form-type="submit">登 录</button>
+              <view class="fp" bindtap='toRegister'>没有账号？注册</view>
+            </view>   
+         </view>
+      </swiper-item>
+   </swiper>
+</view>
+</form>

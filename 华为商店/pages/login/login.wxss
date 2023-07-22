@@ -1,0 +1,75 @@
+.loginTitle{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 15px;
+}
+.select{
+    color: #EE0000;
+    width: 50%;
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+    border-bottom:5rpx solid #EE0000;  
+    font-weight: bold;
+}
+.default{
+    margin: 0 auto;
+    padding: 15px;
+}
+.hr{
+    height: 1px;
+    width: 100%;
+    background-color: #666666;
+    opacity: 0.2;
+}
+.account{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ac{
+    padding:15px;
+    font-size:15px;
+    font-weight: bold;
+    color: #666666;
+}
+.ipt input{
+    text-align: left;
+    width: 140px;
+    color: #000000;
+}
+.placeholder-style{
+    font-size: 14px;
+    color: #cccccc;
+}
+.login{
+    margin: 0 auto;
+    text-align: center;
+    padding-top:10px; 
+}
+.login button{
+  width: 90%;
+  color: #ffffff;
+  background: #EE0000;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 40px;
+}
+.fp{
+    font-size: 13px;
+    color: #3e13da;
+    padding:5px;
+    text-align: right;
+    margin-right:10px;
+    margin-top:10px;  
+}
+.btn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 90px;
+    font-size: 12px;
+    color: #666666;
+    background-color: #f2f2f2;
+}

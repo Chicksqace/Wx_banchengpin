@@ -1,0 +1,75 @@
+<view class="content">
+  <view class="search">
+    <view class="searchInput">
+      <image src="/pages/images/tubiao/search.png" style="width:15px;height:15px;"></image>
+      <text class="searchContent">老用户福利</text>
+    </view>
+  </view>
+  <view class="haibao">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="silde-image" mode="scaleToFill"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="nav">
+    <block wx:for="{{navs}}">
+      <view class="nav-item" bindtap="navBtn">
+        <view>
+          <image src="{{item.img}}" style="width:30px;height:30px;"></image>
+        </view>
+        <view>
+          {{item.name}}
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="category">
+    精品推荐
+  </view>
+  <scroll-view scroll-x="true">
+    <view class="items">
+      <block wx:for="{{hotList}}">
+        <view class="item" id="{{item.id}}" bindtap='seeDetail'>
+          <view class="pic">
+            <image src="{{item.listPic}}" mode="scaleToFill"></image>
+          </view>
+          <view class="name">{{item.goodsName}}</view>
+          <view class="price">￥ {{item.goodsPrice}}</view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+  <view class="hr"></view>
+  <view class="category">
+    手机
+  </view>
+  <view class="items-normal">
+      <block wx:for="{{phoneList}}">
+        <view class="item-normal" id="{{item.id}}">
+          <view class="pic">
+            <image src="{{item.listPic}}" mode="scaleToFill"></image>
+          </view>
+          <view class="name">{{item.goodsName}}</view>
+          <view class="price">￥ {{item.goodsPrice}}</view>
+        </view>
+      </block>
+    </view>
+      <view class="hr"></view>
+  <view class="category">
+    笔记本电脑
+  </view>
+  <view class="items-normal">
+      <block wx:for="{{pcList}}">
+        <view class="item-normal" id="{{item.id}}" bindtap='seeDetail'>
+          <view class="pic">
+            <image src="{{item.listPic}}" mode="scaleToFill"></image>
+          </view>
+          <view class="name">{{item.goodsName}}</view>
+          <view class="price">￥ {{item.goodsPrice}}</view>
+        </view>
+      </block>
+    </view>
+</view>

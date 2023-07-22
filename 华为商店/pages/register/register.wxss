@@ -1,0 +1,59 @@
+.content{
+  height: 600px;
+}
+.loginTitle{
+    margin: 10px;
+    text-align: center;
+}
+.select{
+    font-size:12px;
+    color: red;
+    width: 50%;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    border-bottom:5rpx solid red;  
+}
+.default{
+    font-size:12px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.hr{
+    border: 1px solid #cccccc;
+    opacity: 0.2;
+}
+.account{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ac{
+    padding:15px;
+    font-size:14px;
+    font-weight: bold;
+    color: #666666;
+    width: 60px;
+    text-align: center;
+}
+.ipt input{
+    text-align: left;
+    width: 200px;
+}
+.placeholder-style{
+    font-size: 14px;
+    color: #cccccc;
+}
+.login{
+    margin: 0 auto;
+    text-align: center;
+    padding-top:10px; 
+}
+.login button{
+  width: 90%;
+  color: #ffffff;
+  background: #EE0000;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 40px;
+}

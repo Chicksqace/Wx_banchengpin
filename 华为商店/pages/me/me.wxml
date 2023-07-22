@@ -1,0 +1,101 @@
+<view class="content">
+  <view class="head">
+    <view class="headIcon">
+      <image src="{{headIcon}}" style="width:70px;height:70px;"></image>
+    </view>
+    <view class="login">
+      <view>
+        <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">{{nickName}}</button>
+      </view>
+      <view class="switchLogin" bindtap="switchLogin">
+        切换账号登录
+      </view>
+    </view>
+    <view class="detail">
+      <text>></text>
+    </view>
+  </view>
+  <view class="hr"></view>
+  <view class="item">
+    <view class="order">
+      <image src="/pages/images/me/wddd.jpg" style="width:20px;height:20px;"></image>我的订单</view>
+    <view class="detail2">
+      <text>全部订单 ></text>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="item">
+    <view class="order">
+      <image src="/pages/images/me/wdpt.jpg" style="width:20px;height:20px;"></image>我的拼团</view>
+    <view class="detail2">
+      <text>></text>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="item">
+    <view class="order">
+      <image src="/pages/images/me/yqyl.jpg" style="width:20px;height:20px;"></image>邀请有礼</view>
+    <view class="detail2">
+      <text>></text>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="item">
+    <view class="order">
+      <image src="/pages/images/me/wdthh.jpg" style="width:20px;height:20px;"></image>我的退换货</view>
+    <view class="detail2">
+      <text>></text>
+    </view>
+  </view>
+  <view class="hr"></view>
+  <view class="item">
+    <view class="order">
+      <image src="/pages/images/me/wdyhq.jpg" style="width:20px;height:20px;"></image>我的优惠券</view>
+    <view class="detail2">
+      <text>></text>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="item">
+    <view class="order">
+      <image src="/pages/images/me/wdjf.jpg" style="width:20px;height:20px;"></image>我的积分</view>
+    <view class="detail2">
+      <text>></text>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="item">
+    <view class="order">
+      <image src="/pages/images/me/ygmgm.jpg" style="width:20px;height:20px;"></image>优购码购买</view>
+    <view class="detail2">
+      <text>></text>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="item">
+    <view class="order" bindtap="myAddress">
+      <image src="/pages/images/me/wddz.jpg" style="width:20px;height:20px;"></image>我的地址</view>
+    <view class="detail2">
+      <text>></text>
+    </view>
+  </view>
+  <view class="hr"></view>
+
+  <view class="item">
+    <view class="order">
+      <image src="/pages/images/me/gysc.jpg" style="width:20px;height:20px;"></image>关于商城</view>
+    <view class="detail2">
+      <text>></text>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="item">
+    <view class="order">
+      <image src="/pages/images/me/lxkf.jpg" style="width:20px;height:20px;"></image>联系客服</view>
+    <view class="detail2">
+      <text>></text>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="hr"></view>
+</view>

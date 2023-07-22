@@ -1,0 +1,102 @@
+.head {
+  width: 100%;
+  height: 90px;
+  background-color: #e00;
+  display: flex;
+  flex-direction: row;
+}
+
+.headIcon {
+  margin: 10px;
+}
+
+.headIcon image {
+  border-radius: 50%;
+}
+
+.login {
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  left: 100px;
+  margin-top: 20px;
+}
+
+.login button {
+  background-color: #e00;
+  color: #fff;
+  font-size: 13px;
+   padding: 0px;
+}
+button::after {
+  border: none;
+}
+.switchLogin {
+  background-color: #cd0000;
+  border-radius: 20px;
+  padding: 2px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.detail {
+  color: #fff;
+  font-size: 15px;
+  position: absolute;
+  right: 10px;
+  margin-top: 30px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-item {
+  width: 25%;
+  font-size: 13px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hr {
+  width: 100%;
+  height: 10px;
+  background-color: #f9f8f6;
+}
+
+.order {
+  padding-left: 15px;
+  font-size: 13px;
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.order image {
+  margin-right: 10px;
+}
+
+.detail2 {
+  font-size: 13px;
+  position: absolute;
+  right: 10px;
+  margin-top: 15px;
+  color: rgb(133, 89, 89);
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #666;
+  opacity: 0.2;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+}

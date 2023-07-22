@@ -1,0 +1,34 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="content">
+  <view class="accountType">
+    <view class="account">
+        <view class="ac">用户名</view>
+        <view class="ipt"><input name="loginName" type="text" placeholder="请输入用户名" class="placeholder-style"/></view>
+    </view>
+      <view class="hr"></view>
+      <view class="account">
+        <view class="ac">手机号</view>
+        <view class="ipt"><input name="mobile" type="text" placeholder="请输入手机号" class="placeholder-style"/></view>
+    </view>
+      <view class="hr"></view>
+      <view class="account">
+        <view class="ac">密码</view>
+        <view class="ipt"><input name="loginPassword" type="text" password placeholder="请输入密码" class="placeholder-style"/></view>
+    </view>
+    <view class="hr"></view>
+    <view class="account">
+        <view class="ac">确认密码</view>
+        <view class="ipt"><input name="confirmPassword" type="text" password placeholder="请确认密码" class="placeholder-style"/></view>
+    </view>
+    <view class="hr"></view>
+    <view class="account">
+        <view class="ac">昵称</view>
+        <view class="ipt"><input name="nickName" type="text" placeholder="请输入昵称" class="placeholder-style"/></view>
+    </view>
+    <view class="hr"></view>    
+    <view class="login">
+       <button form-type="submit">注 册</button>
+    </view> 
+  </view>
+</view>
+</form>

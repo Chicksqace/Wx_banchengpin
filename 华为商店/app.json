@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/category",
+    "pages/me/me",
+    "pages/register/register", 
+    "pages/login/login"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "华为商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#ee0000",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "color": "#999999",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/bar/index-0.jpg",
+        "selectedIconPath": "pages/images/bar/index-1.jpg"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "pages/images/bar/category-0.jpg",
+        "selectedIconPath": "pages/images/bar/category-1.jpg"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "pages/images/bar/me-0.jpg",
+        "selectedIconPath": "pages/images/bar/me-1.jpg"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
